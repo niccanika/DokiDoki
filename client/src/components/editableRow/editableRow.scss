@@ -1,0 +1,40 @@
+.commentEditableRow {
+  .container {
+    display: flex;
+
+    .content {
+      font-size: 0.9rem;
+    }
+
+    .editText {
+      flex: 9;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    .editRating {
+      margin-left: 5px;
+      border: none;
+      border-radius: 5px;
+      padding: 5px;
+    }
+
+    .btn {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      .editButton {
+        margin-left: 7px;
+        background-color: #f06960;
+        border: none;
+        width: 70px;
+        color: var(--text-white);
+        font-size: 0.9rem;
+        padding: 5px;
+        cursor: pointer;
+      }
+    }
+  }
+}

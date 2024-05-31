@@ -1,0 +1,39 @@
+.footer {
+  width: 100%;
+  padding: 22px;
+  color: var(--text-white);
+  background: linear-gradient(
+    to top,
+    rgba(4, 58, 71, 0.5) 0%,
+    rgba(38, 38, 39, 0.8) 100%
+  );
+
+  img {
+    max-width: 225px;
+    width: 25%;
+    margin: 2rem auto;
+    display: block;
+  }
+
+  .footerItems {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+
+    div {
+      width: 20%;
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        font-weight: 600;
+        margin-bottom: 8px;
+      }
+
+      span {
+        cursor: pointer;
+        width: fit-content;
+      }
+    }
+  }
+}

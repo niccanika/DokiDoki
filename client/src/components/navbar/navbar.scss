@@ -1,0 +1,133 @@
+.navbar {
+  color: var(--text-white);
+  font-size: 14px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  background: linear-gradient(
+    to top,
+    transparent 0%,
+    rgba(38, 38, 39, 0.5) 50%
+  );
+
+  &.scrolled {
+    background-color: var(--main-color);
+  }
+
+  .container {
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+
+    .left {
+      display: flex;
+      align-items: center;
+
+      img {
+        height: 25px;
+        margin-right: 40px;
+        cursor: pointer;
+      }
+
+      span {
+        margin-right: 20px;
+        cursor: pointer;
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+
+      .link {
+        margin-right: 15px;
+      }
+
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 20px;
+        object-fit: cover;
+        cursor: pointer;
+      }
+
+      .icon {
+        margin: 0 10px;
+        cursor: pointer;
+      }
+
+      .profile {
+        z-index: 99;
+
+        .options {
+          display: none;
+          background-color: var(--main-color);
+          border-radius: 5px;
+          width: 120px;
+        }
+
+        span {
+          padding: 10px;
+          cursor: pointer;
+        }
+
+        &:hover {
+          .options {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            position: absolute;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 800px) {
+    .container {
+      margin-top: 17px;
+
+      .left {
+        flex-direction: column;
+        width: 100%;
+
+        img {
+          // height: 50px;
+          // display: block;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    position: static;
+    margin-top: 32px;
+
+    .container {
+      padding: 0 20px;
+      flex-direction: column;
+      height: 100px;
+
+      .left {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+
+        img {
+          height: 32px;
+        }
+      }
+
+      .right {
+        .profile {
+          .options {
+            height: max-content;
+          }
+        }
+      }
+    }
+  }
+}

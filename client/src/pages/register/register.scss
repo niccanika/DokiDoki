@@ -1,0 +1,93 @@
+.register {
+  width: 100vw;
+  height: 100vh;
+  //   background: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHUki7N-UJ3fTS5e1eXFOmwHUS4WEnOz_7EQcIpuOFzBrDf43NIG3MwgKbwvUG_PPLiLNLmxYaLK1caQxso3bD1wJJuKah91MkH2BnMOLyHTCY2CbzOGbhU0igmye44dsLNV4Ic4dvpiw/s1600/Anime-TV.png");
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("https://www.crowsworldofanime.com/wp-content/uploads/2022/04/SPY_x_FAMILY_Episode-01_Figure-05-scaled.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+  .top {
+    .wrapper {
+      padding: 20px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        height: 40px;
+      }
+
+      .loginButton {
+        cursor: pointer;
+        background-color: #f06960;
+        border: none;
+        color: var(--text-white);
+        padding: 5px 15px;
+        font-style: 1.1rem;
+        font-weight: 500;
+        z-index: 99;
+      }
+    }
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin-left: 20px;
+    margin-right: 20px;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-white);
+
+    h1 {
+      font-size: 3.5rem;
+    }
+
+    h2 {
+      margin: 20px;
+    }
+
+    p {
+      font-size: 1.2rem;
+    }
+
+    .input {
+      width: 50%;
+      background-color: var(--text-white);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+      height: 50px;
+      border-radius: 5px;
+
+      input {
+        flex: 9;
+        height: 100%;
+        border: none;
+        padding: 0 10px;
+      }
+
+      .registerButton {
+        flex: 3;
+        height: 100%;
+        background-color: #f06960;
+        border: none;
+        color: var(--text-white);
+        font-size: 1.1rem;
+        cursor: pointer;
+      }
+    }
+  }
+}

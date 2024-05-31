@@ -1,0 +1,17 @@
+.animeItem {
+  button {
+    background-color: #f06960;
+    color: var(--text-white);
+    border: none;
+    font-size: 0.8rem;
+    padding: 5px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+
+  input,
+  select {
+    border: none;
+    padding: 7px;
+  }
+}

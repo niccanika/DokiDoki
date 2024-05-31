@@ -1,0 +1,59 @@
+.addAnime {
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-white);
+
+  .error {
+    color: red;
+  }
+
+  .pageTitle {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+
+    .label {
+      margin-top: 10px;
+    }
+
+    .animeTextInput,
+    .description {
+      border: none;
+      padding: 10px;
+    }
+
+    .btn {
+      display: flex;
+      justify-content: flex-end;
+      button {
+        margin-top: 20px;
+        cursor: pointer;
+        background-color: #f06960;
+        border: none;
+        color: var(--text-white);
+        padding: 5px 15px;
+        font-style: 1.1rem;
+        font-weight: 500;
+        z-index: 99;
+      }
+    }
+  }
+}
+
+@media (max-width: 1025px) {
+  .addAnime {
+    .form {
+      .description {
+        display: block;
+      }
+    }
+  }
+}
